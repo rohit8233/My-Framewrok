@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">566,777</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ISN_Test.PayrollSettings_Test</td><td><a href="#m0">verifyAddSplitPayrollCalculationDetails_Test</a></td><td rowspan="1">1698063740619</td><td rowspan="1">31049</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">ISN_Test.PayrollSettings_Test</td><td><a href="#m1">verifyAddFixedPayrollCalculation_Test</a></td><td rowspan="1">1698063702438</td><td rowspan="1">33669</td></tr><tr class="passedeven"><td><a href="#m2">verifyAddSplitPayrollCalculation_Test</a></td><td rowspan="1">1698063776084</td><td rowspan="1">31154</td></tr><tr class="passedeven"><td><a href="#m3">verifyDeleteFixedPayrollCalculation_Test</a></td><td rowspan="1">1698063811489</td><td rowspan="1">30039</td></tr><tr class="passedeven"><td><a href="#m4">verifyDeleteSplitPayrollCalculation_Test</a></td><td rowspan="1">1698063845639</td><td rowspan="1">30294</td></tr><tr class="passedeven"><td><a href="#m5">verifyEndDateSelectedInSplitPayrollCalculation_Test</a></td><td rowspan="1">1698063880521</td><td rowspan="1">30935</td></tr><tr class="passedeven"><td><a href="#m6">verifyFixedEndDateFunctionality_Test</a></td><td rowspan="1">1698063916217</td><td rowspan="1">26967</td></tr><tr class="passedeven"><td><a href="#m7">verifyFixedHideDetailsFunctionality_Test</a></td><td rowspan="1">1698063948007</td><td rowspan="1">46755</td></tr><tr class="passedeven"><td><a href="#m8">verifyHideDetailsFunctionality_Test</a></td><td rowspan="1">1698063999270</td><td rowspan="1">46577</td></tr><tr class="passedeven"><td><a href="#m9">verifyShowDetailsFunctionality_Test</a></td><td rowspan="1">1698064050190</td><td rowspan="1">73807</td></tr><tr class="passedeven"><td><a href="#m10">verifySplitEndDateFunctionality_Test</a></td><td rowspan="1">1698064128274</td><td rowspan="1">29015</td></tr><tr class="passedeven"><td><a href="#m11">verifyStartDateSelectedInFixedPayrollCalculation_Test</a></td><td rowspan="1">1698064161891</td><td rowspan="1">40704</td></tr><tr class="passedeven"><td><a href="#m12">verifyStartDateSelectedInSplitPayrollCalculation_Test</a></td><td rowspan="1">1698064207427</td><td rowspan="1">46829</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">ISN_Test.PayrollSettings_Test#verifyAddSplitPayrollCalculationDetails_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 2.5%Expected text is not Matched with Actual expected [2.5%] but found []
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at genericUtils.AssertionUtility.assertTextEquals(AssertionUtility.java:51)
+	at POM.PayrollSettingsObject.addandchecksplitAmountDetails(PayrollSettingsObject.java:522)
+	at ISN_Test.PayrollSettings_Test.verifyAddSplitPayrollCalculationDetails_Test(PayrollSettings_Test.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ISN_Test.PayrollSettings_Test#verifyAddFixedPayrollCalculation_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ISN_Test.PayrollSettings_Test#verifyAddSplitPayrollCalculation_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ISN_Test.PayrollSettings_Test#verifyDeleteFixedPayrollCalculation_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">initialcount is 4</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ISN_Test.PayrollSettings_Test#verifyDeleteSplitPayrollCalculation_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ISN_Test.PayrollSettings_Test#verifyEndDateSelectedInSplitPayrollCalculation_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ISN_Test.PayrollSettings_Test#verifyFixedEndDateFunctionality_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">ISN_Test.PayrollSettings_Test#verifyFixedHideDetailsFunctionality_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ISN_Test.PayrollSettings_Test#verifyHideDetailsFunctionality_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ISN_Test.PayrollSettings_Test#verifyShowDetailsFunctionality_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Show Details Button is not Present For This Record</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">ISN_Test.PayrollSettings_Test#verifySplitEndDateFunctionality_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">ISN_Test.PayrollSettings_Test#verifyStartDateSelectedInFixedPayrollCalculation_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">ISN_Test.PayrollSettings_Test#verifyStartDateSelectedInSplitPayrollCalculation_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
